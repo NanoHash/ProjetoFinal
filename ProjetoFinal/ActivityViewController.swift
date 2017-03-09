@@ -10,6 +10,9 @@ import UIKit
 
 class ActivityViewController: UIViewController {
 
+    @IBOutlet weak var activityName: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

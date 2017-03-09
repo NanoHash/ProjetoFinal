@@ -36,6 +36,17 @@ class Task {
     }
 }
 
+class CellTask {
+    let description : String
+    var completed : Bool
+    var priority : Int8
+    init(desc : String , completed : Bool, priority : Int8) {
+        self.description = desc
+        self.completed = completed
+        self.priority = priority
+    }
+}
+
 class Reminder : Task {
     let reminderDate : String
     init (reminderDate : String, name : String, priority : Int16) {
