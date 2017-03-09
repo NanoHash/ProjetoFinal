@@ -35,13 +35,23 @@ class FakeUserDB {
         return user
     }
     
-    static func getFeed (user : User) {
-        var userGroups = [Family]()
+    static func getGroups (_ user : User) -> [Family] {
+        var groups = [Family]()
         for code in user.family {
-            //do {
-            //    try userGroups.append( self.groupsList[code]! )
-            //} catch let e {
-            //}
+            if let f = self.groupsList[code] {
+                groups.append(f)
+            }
         }
+        return groups
     }
+    
+    static func getFeed (user : User) -> [Task] {
+        var feed = [Task] ()
+        let allGroups = getGroups(user)
+        for g in allGroups {
+            feed = feed + g.GetTasksNoReminders()
+        }
+        return feed
+    }
+    
 }

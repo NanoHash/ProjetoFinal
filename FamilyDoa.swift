@@ -72,4 +72,8 @@ class Family {
         return ret
     }
     
+    func GetTasksNoReminders () -> [Task] {
+        return taskfeed
+    }
+    
 }
