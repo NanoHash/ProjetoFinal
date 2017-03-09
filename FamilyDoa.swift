@@ -14,13 +14,13 @@ class User {
     let name: String
     let surname: String
     let email: String
-    var family: String
+    //   var image : UImage?
+    var family = [String]()
     // photo ?
     init (name: String, surname: String, email: String, family: String) {
         self.name = name
         self.surname = surname
         self.email = email
-        self.family = family
     }
 }
 
@@ -55,6 +55,10 @@ class Family {
     init (familyCode: String, admin: User) {
         self.admins.append(admin)
         self.familyCode = familyCode
+    }
+    
+    func getFamilyCode () -> String {
+        return self.familyCode
     }
     
     func GetTasksFor (date : String) -> [Task] {

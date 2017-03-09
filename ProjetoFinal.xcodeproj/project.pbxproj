@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F77C2C21E71771100940E42 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77C2C11E71771100940E42 /* FeedTableViewController.swift */; };
 		3F7BBC751E6DA90B00C4EF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BBC741E6DA90B00C4EF96 /* AppDelegate.swift */; };
 		3F7BBC771E6DA90B00C4EF96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BBC761E6DA90B00C4EF96 /* ViewController.swift */; };
 		3F7BBC7A1E6DA90B00C4EF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7BBC781E6DA90B00C4EF96 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F77C2C11E71771100940E42 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		3F7BBC711E6DA90B00C4EF96 /* ProjetoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7BBC741E6DA90B00C4EF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7BBC761E6DA90B00C4EF96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				3F9422361E704E4600E06957 /* GroupsTableViewController.swift */,
 				3F9422371E704E4600E06957 /* LoginViewController.swift */,
 				3F9422301E704DFD00E06957 /* FakeUserDB.swift */,
+				3F77C2C11E71771100940E42 /* FeedTableViewController.swift */,
 				3F9422311E704DFD00E06957 /* FamilyDoa.swift */,
 				3FF8AD691E7024F2005CA4AA /* CadastroViewController.swift */,
 				3F7BBC7B1E6DA90B00C4EF96 /* Assets.xcassets */,
@@ -173,6 +176,7 @@
 				3FF8AD6A1E7024F2005CA4AA /* CadastroViewController.swift in Sources */,
 				3F9422391E704E4600E06957 /* GroupsTableViewCell.swift in Sources */,
 				3F7BBC751E6DA90B00C4EF96 /* AppDelegate.swift in Sources */,
+				3F77C2C21E71771100940E42 /* FeedTableViewController.swift in Sources */,
 				3F9422321E704DFD00E06957 /* FakeUserDB.swift in Sources */,
 				3F9422381E704E4600E06957 /* Groups.swift in Sources */,
 			);

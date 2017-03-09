@@ -11,6 +11,7 @@ import Foundation
 
 class FakeUserDB {
     static var userlist = [User]()
+    static var groupsList = [String : Family]()
     static var currentUser : User?
     
     
@@ -18,6 +19,10 @@ class FakeUserDB {
     {
         self.userlist.append(user)
     }
+    static func addGroup (family : Family) {
+        self.groupsList[family.getFamilyCode()] = family
+    }
+    
     static func login(email : String) -> User {
         var user = User(name: "No such user", surname: "No user", email: "Invalid", family: "nocde")
         for u in self.userlist {
@@ -28,5 +33,15 @@ class FakeUserDB {
             }
         }
         return user
+    }
+    
+    static func getFeed (user : User) {
+        var userGroups = [Family]()
+        for code in user.family {
+            //do {
+            //    try userGroups.append( self.groupsList[code]! )
+            //} catch let e {
+            //}
+        }
     }
 }
