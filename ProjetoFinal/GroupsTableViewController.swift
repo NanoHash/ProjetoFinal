@@ -12,7 +12,8 @@ class GroupsTableViewController: UITableViewController {
 
     // 1) Inicializando o nosso array de animais
     //      - A classe Animal está definida no arquivo Animal.swift
-    var groups = [Groups]()
+    
+    var groups = [Family]()
     
     // O método viewDidLoad() é chamado após a view ser alocada em memória
     // Lugar ideal apra fazer inicializações
@@ -20,7 +21,9 @@ class GroupsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         // 2) Buscamos os dados para serem exibidos na nossa lista
-        groups = GroupsDAO.getList()
+        if let user = FakeUserDB.currentUser {
+            groups = FakeUserDB.getGroups(user)
+        }
     }
 
     // MARK: - Table view data source
@@ -51,10 +54,10 @@ class GroupsTableViewController: UITableViewController {
             let group = groups[indexPath.row]
             
             // Configuramos os outlets da animalCell
-            groupsCell.nomeLabel.text = group.nome
-            groupsCell.informacoesLabel.text = group.informacoes
+            groupsCell.nomeLabel.text = group.familyName
+//           groupsCell.informacoesLabel.text = group.informacoes
             
-            groupsCell.fotoDoGrupo.image = UIImage(named: group.nomeDaFoto)
+            groupsCell.fotoDoGrupo.image = group.familyImage
 
             // Temos que retornar a animalCell ao fim da configuração
             return groupsCell

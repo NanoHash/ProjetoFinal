@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 class User {
     
@@ -47,14 +47,18 @@ class Reminder : Task {
 class Family {
     // family feed
     // photo
+    var familyName : String?
+    var familyImage : UIImage
     var taskfeed = [Task]()
     var reminders = [String : [Reminder]]()
     var users = [User]()
     var admins = [User]()
     let familyCode: String
-    init (familyCode: String, admin: User) {
+    init (familyCode: String, admin: User, famName : String, img : UIImage) {
         self.admins.append(admin)
+        self.familyName = famName
         self.familyCode = familyCode
+        self.familyImage = img
     }
     
     func getFamilyCode () -> String {

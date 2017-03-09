@@ -25,5 +25,5 @@ class GroupsTableViewCell: UITableViewCell {
     @IBOutlet weak var nomeLabel: UILabel!
     
     
-    @IBOutlet weak var informacoesLabel: UILabel!
+//    @IBOutlet weak var informacoesLabel: UILabel!
 }
